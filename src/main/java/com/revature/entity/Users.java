@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="PROJECT_02_DB")
+@Table(name="Users")
 public class Users {
 	
 	@Id
@@ -17,19 +17,19 @@ public class Users {
 	int userId;
 	
 	@Column(name="U_FIRST_NAME")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
 	String firstName;
 	
 	@Column(name="U_LAST_NAME")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
 	String lastName;
 	
 	@Column(name="U_USERNAME")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
 	String userName;
 	
 	@Column(name="U_PASSWORD")
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
 	String password;
 	
 	Post post;
